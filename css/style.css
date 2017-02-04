@@ -1,0 +1,91 @@
+body {
+  background: white;
+  color: black;
+  font-family: 'Sansita', sans-serif;
+}
+  .header {
+    position: fixed;
+    z-index: 1;
+    background: rgba(255, 255, 255, .9);
+    text-align: center;
+    border-bottom: solid 10px black;
+  }
+
+  .banner-logo, line, polyline {
+      color: black;
+      fill: black;}
+
+  /*Navigation Components*/
+  a {
+    color: black;
+    text-decoration: none;
+  }
+    a:hover {
+      color: black;
+      text-decoration: none;
+      border-bottom: solid black 3px;
+      border-top: solid 3px rgba(255, 255, 255, 0);
+    }
+  .jumplink {
+    visibility: hidden;
+  }
+
+/*Artwork Feed*/
+  .img-feed {
+  margin-top: 150px;
+  }
+  .artwork {
+    margin-bottom: 10px;
+  }
+
+/*Sections*/
+  .section {
+    margin: 100px 0px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+/*Contact Section*/
+    #contact-info {
+      padding: 75px 0px;
+      border-top: solid 2px black;
+      border-bottom: solid 2px black;
+    }
+
+/*News Section*/
+
+/*Follow Section*/
+#follow-section{
+  color: white;
+  margin-bottom: 100px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: black;
+  }
+  #follow-title {
+    color: white;
+    border-right: solid 2px white;
+  }
+  #follow-info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .follow-sub-container {
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    max-width: 80px;
+  }
+
+
+/*Media Responces*/
+@media (max-width: 1000px) {
+@media (max-width: 1000px) {
+@media (max-width: 1000px) {
