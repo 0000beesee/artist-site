@@ -119,15 +119,3 @@ body {
   .logo {
     max-width: 35px;}
 }
-
-@media (max-width: 700px) {
-  .nav-text, .title, .info {
-    font-size: 12px;}
-  .img-feed, .section  {
-    margin-top: 75px;}
-  .section {
-    margin-top: 35px;
-    height: 100px}
-  .logo {
-    max-width: 35px;}
-}
