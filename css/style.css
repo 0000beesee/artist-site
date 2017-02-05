@@ -10,10 +10,10 @@ body {
     text-align: center;
     border-bottom: solid 10px black;
   }
-
-  .banner-logo, line, polyline {
-      color: black;
-      fill: black;}
+  .nav-text {
+    display: flex;
+    justify-content: center;
+  }
 
   /*Navigation Components*/
   a {
@@ -40,7 +40,7 @@ body {
 
 /*Sections*/
   .section {
-    margin: 100px 0px;
+    margin-top: 100px;
     height: 150px;
     display: flex;
     justify-content: center;
@@ -48,10 +48,10 @@ body {
     text-align: center;
   }
 /*Contact Section*/
-    #contact-info {
-      padding: 75px 0px;
-      border-top: solid 2px black;
-      border-bottom: solid 2px black;
+  #contact-info {
+    padding: 35px 0px;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
     }
 
 /*News Section*/
@@ -59,8 +59,6 @@ body {
 /*Follow Section*/
 #follow-section{
   color: white;
-  margin-bottom: 100px;
-  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,7 +83,39 @@ body {
   }
 
 
-/*Media Responces*/
-@media (max-width: 1000px) {
-@media (max-width: 1000px) {
-@media (max-width: 1000px) {
+/*Media*/
+@media (max-width: 1250px) {
+  .nav-text, .title, .info {
+    font-size: 22px;}
+  .img-feed {
+    margin-top: 120px;}
+  .section {
+    margin-top: 75px;
+    height: 100px}
+  .logo {
+    max-width: 60px;}
+}
+@media (max-width: 950px) {
+  .nav-text, .title, .info {
+    font-size: 15px;}
+  .img-feed, .section {
+    margin-top: 100px;}
+  .image-reel {
+    width: 100%;}
+  .section {
+    margin-top: 50px;
+    height: 100px}
+  .logo {
+    max-width: 50px;}
+}
+@media (max-width: 700px) {
+  .nav-text, .title, .info {
+    font-size: 12px;}
+  .img-feed, .section  {
+    margin-top: 75px;}
+  .section {
+    margin-top: 35px;
+    height: 100px}
+  .logo {
+    max-width: 35px;}
+}
