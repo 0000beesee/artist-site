@@ -10,6 +10,10 @@ body {
     text-align: center;
     border-bottom: solid 10px black;
   }
+  .nav-text {
+    display: flex;
+    justify-content: center;
+  }
 
   /*Navigation Components*/
   a {
