@@ -3,16 +3,18 @@ body {
   color: black;
   font-family: 'Sansita', sans-serif;
 }
-  .header {
+  .nav {
     position: fixed;
     z-index: 1;
     background: rgba(255, 255, 255, .9);
-    text-align: center;
     border-bottom: solid 10px black;
   }
-  .nav-text {
+  .artist-name {
+    text-align: center;
+  }
+  .nav-item-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   /*Navigation Components*/
@@ -32,7 +34,7 @@ body {
 
 /*Artwork Feed*/
   .img-feed {
-  margin-top: 150px;
+    margin-top: 150px;
   }
   .artwork {
     margin-bottom: 10px;
@@ -52,18 +54,18 @@ body {
     padding: 35px 0px;
     border-top: solid 2px black;
     border-bottom: solid 2px black;
-    }
+  }
 
 /*News Section*/
 
 /*Follow Section*/
-#follow-section{
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: black;
+  #follow-section{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: black;
   }
   #follow-title {
     color: white;
@@ -82,6 +84,11 @@ body {
     max-width: 80px;
   }
 
+/*Footer*/
+  #footer {
+    text-align: center;
+    margin: 25px;
+ }
 
 /*Media*/
 @media (max-width: 1250px) {
@@ -97,7 +104,7 @@ body {
 }
 @media (max-width: 950px) {
   .nav-text, .title, .info {
-    font-size: 15px;}
+    font-size: 18px;}
   .img-feed, .section {
     margin-top: 100px;}
   .image-reel {
@@ -110,7 +117,7 @@ body {
 }
 @media (max-width: 700px) {
   .nav-text, .title, .info {
-    font-size: 12px;}
+    font-size: 16px;}
   .img-feed, .section  {
     margin-top: 75px;}
   .section {
@@ -119,3 +126,6 @@ body {
   .logo {
     max-width: 35px;}
 }
+@media (max-width: 500px) {
+  .nav-text, .title, .info {
+    font-size: 14px;}
