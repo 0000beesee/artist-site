@@ -28,7 +28,6 @@ body {
       border-bottom: solid black 3px;
       }
     a:visited, a:focus{
-      color: black;
       text-decoration: none;
       }
   .jumplink {
@@ -51,6 +50,9 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  .info {
+    font-family: 'Open Sans', sans-serif;
   }
 /*Contact Section*/
   #contact-info {
@@ -80,13 +82,19 @@ body {
     transition: all ease-in-out 120ms;
   }
   .logo:hover {
+    cursor: pointer;
     transform: scale(1.1);
   }
 
 /*Footer*/
   #footer {
-    margin: 25px 0px;
+    margin: 25px 0px 20px 0px;
     text-align: center;
+  }
+  .footer-link {
+    font-family: 'Open Sans', sans-serif;
+  }
+  .footer-link:hover {
   }
 
 /*Media*/
