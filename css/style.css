@@ -99,9 +99,6 @@ body {
   .footer-link {
     font-family: 'Open Sans', sans-serif;
   }
-  .footer-link:hover {
-  }
-
 /*Media*/
 @media (max-width: 1250px) {
   .nav-text, .title, .info {
