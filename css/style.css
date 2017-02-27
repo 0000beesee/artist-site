@@ -1,134 +1,102 @@
 body {
   background: white;
   color: black;
-  font-family: 'Sansita', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
-  .nav {
+  #banner {
+    margin: 25px 10px 0px 0px;
+    text-transform: uppercase;
+    display: none;
+    text-align: center;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  .info-feed {
     position: fixed;
     z-index: 1;
-    background: rgba(255, 255, 255, .9);
-    border-bottom: solid 4px black;
-    padding: 0px 15px;
   }
-  .artist-name {
-    text-align: center;
-  }
-  .nav-item-container {
-    display: flex;
-    justify-content: space-around;
-  }
-  /*Navigation Components*/
-  a {
-    color: black;
-    text-decoration: none;
+    ul {
+      list-style-type:circle;
+    }
+    .nav-card {
+      text-transform: uppercase;
+    }
+    .card {
+      margin-top: 10px;
+      border: solid 1px black;
+      padding: 6px 15px 0px 15px;
+      min-width: 200px;
+    }
+    #about-card, #contact-card, #news-card, #follow-card, #clear-trigger {
+      display: none;
+      opacity: 0;
+    }
+    #about-card.is-visible, #contact-card.is-visible, #news-card.is-visible, #follow-card.is-visible, #clear-trigger.is-visible {
+      display: inherit;
+      opacity: 1;
+    }
+    #clear-trigger {
+      text-align: right;
+      margin-top: 5px;
+      min-width: 185px;
+    }
+    a {
+      color: black;
     }
     a:hover {
+      cursor: pointer;
       color: black;
-      text-decoration: none;
-      border-bottom: solid black 3px;
-      }
+    }
     a:visited, a:focus{
       text-decoration: none;
-      }
-  .jumplink {
-    visibility: hidden;
-  }
-
+    }
+/*Navigation Components*/
+    .jumplink {
+      visibility: hidden;
+    }
 /*Artwork Feed*/
   .img-feed {
-    margin-top: 150px;
+    margin-top: 50px;
+  }
+  .img-reel {
+    max-width: 960px;
   }
   .artwork {
     margin-bottom: 10px;
   }
-
-/*Sections*/
-  .section {
-    margin-top: 100px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  #y {
+    width: 100%;
   }
-  .title {
+  #open-popup:hover {
+    cursor:pointer;
   }
-  .info {
-    font-family: 'Open Sans', sans-serif;
-  }
-/*Contact Section*/
-  #contact-info {
-    padding: 35px 0px;
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
-  }
-
-/*News Section*/
-
-/*Follow Section*/
-  #follow-section{
-    color: white;
-    background: black;
-  }
-  #follow-info-container {
-    display: flex;
-    justify-content: space-around;
-  }
-  .logo-container {
-    padding: 0px;
-  }
-  .logo {
-    display: inline-block;
-    max-width: 50%;
-    min-width: 35px;
-    transition: all ease-in-out 80ms;
-  }
-  .logo:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-  }
-  .logo:active {
-    transform: scale(1.0);
-  }
-
 /*Footer*/
   #footer {
     margin: 25px 0px 20px 0px;
+    text-transform: uppercase;
     text-align: center;
-  }
-  .footer-link {
-    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-around;
   }
 /*Media*/
 @media (max-width: 1250px) {
-  .nav-text, .title, .info {
-    font-size: 22px;}
+  body {
+    font-size: 11px;
+  }
+@media (max-width: 1000px) {
+  body {
+    font-size: 10px;}
+  #banner {
+    display: flex;}
+  .info-feed {
+    position: relative;}
+  .nav-card {
+    display: none;}
   .img-feed {
-    margin-top: 120px;}
-  .section {
-    margin-top: 75px;
-    height: 100px}
-@media (max-width: 950px) {
-  .nav-text, .title, .info {
-    font-size: 18px;}
-  .img-feed, .section {
-    margin-top: 100px;}
-  .image-reel {
+    margin-top: 25px;}
+  .img-reel {
     width: 100%;}
-  .section {
-    margin-top: 50px;
-    height: 100px}
 @media (max-width: 700px) {
-  .nav-text, .title, .info {
-    font-size: 16px;}
-  .img-feed, .section  {
-    margin-top: 75px;}
-  .section {
-    margin-top: 35px;
-    height: 100px}
-@media (max-width: 500px) {
-  .nav-text, .title, .info {
-    font-size: 14px;}
-@media (max-width: 400px) {
-  .nav-text, .title, .info {
-    font-size: 11px;}
+  body {
+    font-size: 9px;
+  }

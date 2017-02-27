@@ -4,3 +4,4 @@ function showMailingPopUp() {
 };
 
 document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+document.getElementById("open-popup-2").onclick = function() {showMailingPopUp()};
