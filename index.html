@@ -1,93 +1,102 @@
 <!DOCTYPE html>
-<head>
-  <title>Brandon Cramm - Artwork</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Sansita:400" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-
-<body>
-  <a class="col-xs-12" name="jumpTo-Top"></a>
-
-  <div class="col-xs-12 header">
-    <div class="col-xs-4"><h2 class="name nav-text">Brandon Cramm</h2></div>
-    <div class="col-xs-1"><h2 class="nav-text"><a href="#jumpTo-About">About</a></h2></div>
-    <div class="col-xs-1"><h2 class="nav-text"><a href="#jumpTo-Contact">Contact</a></h2></div>
-    <div class="col-xs-1"><h2 class="nav-text"><a href="#jumpTo-News">News</a></h2></div>
-    <div class="col-xs-1"><h2 class="nav-text"><a href="#jumpTo-Follow">Follow</a></h2></div>
-    <div class="col-xs-1"></div>
-  </div>
-  </div>
-
-  <div class="col-xs-12 img-feed">
-    <div class="col-xs-4"></div>
-    <div class="col-xs-7 image-reel">
-      <img class="img-responsive artwork" src="img/artwork/image1.png" alt="">
-      <img class="img-responsive artwork" src="img/artwork/image2.png" alt="">
-      <img class="img-responsive artwork" src="img/artwork/image3.png" alt="">
-      <img class="img-responsive artwork" src="img/artwork/image5.png" alt="">
-      <img class="img-responsive artwork" src="img/artwork/image6.png" alt="">
-      <img class="img-responsive artwork" src="img/artwork/image7.png" alt="">
+<html>
+  <head>
+    <title>Brandon Cramm - Artwork</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <!--target for #jump-to-top link-->
+    <div class="col-xs-12"><a name="jumpTo-Top"></a></div>
+    <!--mobile banner-->
+    <div class="col-xs-12" id="banner">
+      <div class="col-xs-2"><h>Brandon Cramm</h></div>
+      <div class="col-xs-2"><a id="about-banner-trigger">About</a></div>
+      <div class="col-xs-2"><a id="contact-banner-trigger">Contact</a></div>
+      <div class="col-xs-2"><a id="news-banner-trigger">News</a></div>
+      <div class="col-xs-2"><a id="follow-banner-trigger">Follow</a></div>
     </div>
-    <div class="col-xs-1"></div>
-  </div>
-
-  <div class="col-xs-12 jumplink"><a name="jumpTo-About">jump</a></div>
-
-  <div class="col-xs-12 section">
-    <div class="col-xs-4">
-    <h2 class="title">About</h2>
-    </div>
-    <div class="col-xs-7">
-    <h4 class="info">b. 1986 (US)</h4>
-    <h4 class="info">currently lives and works in Glasgow, UK<h4>
-    <a class="info" href="">CV</a>
-    </div>
-    <div class="col-xs-1"></div>
-  </div>
-
-  <div class="col-xs-12 jumplink"><a name="jumpTo-Contact">jump</a></div>
-
-  <div class="col-xs-12 section">
-    <div class="col-xs-4 title">
-      <h2 class="title">Contact</h2>
-    </div>
-    <div class="col-xs-7" id="contact-info">
-    <a href="mailto:brandoncramm@gmail.com"><h2 class="info">email: brandoncramm@gmail.com</h2></a>
-    </div>
-    <div class="col-xs-1"></div>
-  </div>
-
-  <div class="col-xs-12 jumplink"><a name="jumpTo-News">jump</a></div>
-
-  <div class="col-xs-12 section">
-    <div class="col-xs-4 title">
-    <h2 class="title">News</h2>
-    </div>
-    <div class="col-xs-7 info">
-    <h4 class="info">TBA - Writting Commission for Transmission Gallery, Glasgow</h4>
-    <h4 class="info">TBA - Exhibtion @ Fogstand Gallery, Tiawan<h4>
-    </div>
-    <div class="col-xs-1"></div>
-  </div>
-
-  <div class="col-xs-12 jumplink"><a name="jumpTo-Follow">jump</a></div>
-
-  <div class="col-xs-12" id="section-container">
-    <div class="col-xs-12 section" id="follow-section">
-        <div class="col-xs-4 title"><h2 class="title">Follow</h2></div>
-        <div class="col-xs-8 info" id="follow-info-container">
-          <div class="col-xs-1 follow-sub-container"><img class="img-responsive logo" src="img/logos/email-logo.svg" alt=""></div>
-          <div class="col-xs-1 follow-sub-container"><img class="img-responsive logo" src="img/logos/twitter-logo.svg" alt=""></div>
-          <div class="col-xs-1 follow-sub-container" ><img class="img-responsive logo" src="img/logos/instagram-logo.svg" alt=""></div>
+    <!--nav and info gutter-->
+    <div class="col-xs-12">
+      <div class="col-xs-3 info-feed">
+        <div class="col-xs-12 nav-card card">
+          <p>Brandon Cramm</p>
+          <ul>
+            <li><a id="about-trigger">About</a></li>
+            <li><a id="contact-trigger">Contact</a></li>
+            <li><a id="news-trigger">News</a></li>
+            <li><a id="follow-trigger">Follow</a></li>
+          </ul>
         </div>
+        <div class="col-xs-12 card" id="about-card">
+          <p>Biographical Information</p>
+          <p>b. 1986 (US)<br>currently lives and works in Glasgow, UK<br><a href="content/BrandonCramm-CV-Feb2017.pdf" target="_blank">(Download CV)</a></p>
+        </div>
+      <div class="col-xs-12 card" id="contact-card">
+        <p>Contact:<a href="mailto:brandoncramm@gmail.com"> brandoncramm@gmail.com</a></p>
       </div>
-
-  <div class="col-xs-12 section" id="footer">
-    <a href="#jumpTo-Top"><h4>BACK TO TOP</h4></a>
-  </div>
-</body>
+      <div class="col-xs-12 card" id="news-card">
+        <p>News</p>
+        <p>TBA - Writting Commission for Transmission Gallery, Glasgow <br>TBA - Exhibition @ Fogstand Gallery, Tiawan</p>
+      </div>
+      <div class="col-xs-12 card" id="follow-card">
+        <p>
+          <a id="open-popup">Subscribe To Mailing List</a><br>
+          <a href="https://twitter.com/BrandonCramm" target="_blank">Twitter</a><br>
+          <a href="https://www.instagram.com/0000bc/" target="_blank">Instagram</a>
+        </p>
+      </div>
+      <div class="col-xs-12"><a id="clear-trigger">[clear]</a></div>
+      <div class="col-xs-9"></div>
+    </div>
+    </div>
+    <!--image gutter-->
+    <div class="col-xs-12 img-feed">
+      <div class="col-xs-4">
+      </div>
+      <div class="col-xs-8 img-reel">
+        <img class="img-responsive artwork" src="content/img/artwork/image1.png" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image2.png" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image3.png" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image5.png" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image6.png" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image7.png" alt="">
+        <object class="img-responsive" data="content/postergraphic.svg" type="image/svg+xml"></object>
+        <img class="img-responsive artwork" src="content/img/artwork/speed-painting.gif" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image8.png" alt="">
+        <img class="img-responsive artwork" id="y" src="content/img/artwork/image9.gif" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image10.jpg" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image11.jpg" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image12.jpg" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image13.jpg" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image14.jpg" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image15.jpg" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image16.jpg" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image17.jpg" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image18.jpg" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image19.jpg" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image20.jpg" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image21.jpg" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image22.jpg" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image23.png" alt="">
+        <img class="img-responsive artwork" src="content/img/artwork/image24.jpg" alt="">
+      </div>
+    </div>
+    <!--footer-->
+    <div class="col-xs-12" id="footer">
+      <div class="col-xs-2"><a class="footer-link" href="#jumpTo-Top">[Return to Top]</a></div>
+      <div class="col-xs-2"><a href="mailto:brandoncramm@gmail.com">Contact</a></div>
+      <div class="col-xs-2"><a><p id="open-popup-2">Mailing list</p></a></div>
+      <div class="col-xs-2"><a href="https://twitter.com/BrandonCramm" target="_blank"><p>Twitter</p></a></div>
+      <div class="col-xs-2"><a href="https://www.instagram.com/0000bc/" target="_blank"><p>Instagram</p></a></div>
+    </div>
+  </body>
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+  <script type="text/javascript" src="script/mailchimp-popup.js"></script>
+  <script type="text/javascript" src="script/info-cards.js"></script>
+</html>

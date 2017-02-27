@@ -1,121 +1,102 @@
 body {
   background: white;
   color: black;
-  font-family: 'Sansita', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
-  .header {
+  #banner {
+    margin: 25px 10px 0px 0px;
+    text-transform: uppercase;
+    display: none;
+    text-align: center;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  .info-feed {
     position: fixed;
     z-index: 1;
-    background: rgba(255, 255, 255, .9);
-    text-align: center;
-    border-bottom: solid 10px black;
   }
-  .nav-text {
-    display: flex;
-    justify-content: center;
-  }
-
-  /*Navigation Components*/
-  a {
-    color: black;
-    text-decoration: none;
-  }
-    a:hover {
-      color: black;
-      text-decoration: none;
-      border-bottom: solid black 3px;
-      border-top: solid 3px rgba(255, 255, 255, 0);
+    ul {
+      list-style-type:circle;
     }
-  .jumplink {
-    visibility: hidden;
-  }
-
+    .nav-card {
+      text-transform: uppercase;
+    }
+    .card {
+      margin-top: 10px;
+      border: solid 1px black;
+      padding: 6px 15px 0px 15px;
+      min-width: 200px;
+    }
+    #about-card, #contact-card, #news-card, #follow-card, #clear-trigger {
+      display: none;
+      opacity: 0;
+    }
+    #about-card.is-visible, #contact-card.is-visible, #news-card.is-visible, #follow-card.is-visible, #clear-trigger.is-visible {
+      display: inherit;
+      opacity: 1;
+    }
+    #clear-trigger {
+      text-align: right;
+      margin-top: 5px;
+      min-width: 185px;
+    }
+    a {
+      color: black;
+    }
+    a:hover {
+      cursor: pointer;
+      color: black;
+    }
+    a:visited, a:focus{
+      text-decoration: none;
+    }
+/*Navigation Components*/
+    .jumplink {
+      visibility: hidden;
+    }
 /*Artwork Feed*/
   .img-feed {
-  margin-top: 150px;
+    margin-top: 50px;
+  }
+  .img-reel {
+    max-width: 960px;
   }
   .artwork {
     margin-bottom: 10px;
   }
-
-/*Sections*/
-  .section {
-    margin-top: 100px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  #y {
+    width: 100%;
+  }
+  #open-popup:hover {
+    cursor:pointer;
+  }
+/*Footer*/
+  #footer {
+    margin: 25px 0px 20px 0px;
+    text-transform: uppercase;
     text-align: center;
-  }
-/*Contact Section*/
-  #contact-info {
-    padding: 35px 0px;
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
-    }
-
-/*News Section*/
-
-/*Follow Section*/
-#follow-section{
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: black;
-  }
-  #follow-title {
-    color: white;
-    border-right: solid 2px white;
-  }
-  #follow-info-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
   }
-  .follow-sub-container {
-    display: flex;
-    justify-content: center;
-  }
-  .logo {
-    max-width: 80px;
-  }
-
-
 /*Media*/
 @media (max-width: 1250px) {
-  .nav-text, .title, .info {
-    font-size: 22px;}
+  body {
+    font-size: 11px;
+  }
+@media (max-width: 1000px) {
+  body {
+    font-size: 10px;}
+  #banner {
+    display: flex;}
+  .info-feed {
+    position: relative;}
+  .nav-card {
+    display: none;}
   .img-feed {
-    margin-top: 120px;}
-  .section {
-    margin-top: 75px;
-    height: 100px}
-  .logo {
-    max-width: 60px;}
-}
-@media (max-width: 950px) {
-  .nav-text, .title, .info {
-    font-size: 15px;}
-  .img-feed, .section {
-    margin-top: 100px;}
-  .image-reel {
+    margin-top: 25px;}
+  .img-reel {
     width: 100%;}
-  .section {
-    margin-top: 50px;
-    height: 100px}
-  .logo {
-    max-width: 50px;}
-}
 @media (max-width: 700px) {
-  .nav-text, .title, .info {
-    font-size: 12px;}
-  .img-feed, .section  {
-    margin-top: 75px;}
-  .section {
-    margin-top: 35px;
-    height: 100px}
-  .logo {
-    max-width: 35px;}
-}
+  body {
+    font-size: 9px;
+  }
