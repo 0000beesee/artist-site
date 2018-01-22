@@ -8,7 +8,7 @@
     },
       cacheDom: function() {
         //cards
-        this.elements = $('#info-module')
+        this.elements = $('#info-module') // cached all card info once and used .find to identify individual elements
         this.$aboutCard = this.elements.find('#about-card');
         this.$contactCard = this.elements.find('#contact-card');
         this.$newsCard = this.elements.find('#news-card');
@@ -29,13 +29,13 @@
         this.$contactTrigger.on('click', this.showContactCard.bind(this));
         this.$newsTrigger.on('click', this.showNewsCard.bind(this));
         this.$followTrigger.on('click', this.showFollowCard.bind(this));
-        this.$aboutBannerTrigger.on('click', this.clearCards.bind(this));
+        this.$aboutBannerTrigger.on('click', this.clearCards.bind(this)); // multiple handlers
         this.$aboutBannerTrigger.on('click', this.showAboutCard.bind(this));
-        this.$contactBannerTrigger.on('click', this.clearCards.bind(this));
+        this.$contactBannerTrigger.on('click', this.clearCards.bind(this));// multiple handlers
         this.$contactBannerTrigger.on('click', this.showContactCard.bind(this));
-        this.$newsBannerTrigger.on('click', this.clearCards.bind(this));
+        this.$newsBannerTrigger.on('click', this.clearCards.bind(this));// multiple handlers
         this.$newsBannerTrigger.on('click', this.showNewsCard.bind(this));
-        this.$followBannerTrigger.on('click', this.clearCards.bind(this));
+        this.$followBannerTrigger.on('click', this.clearCards.bind(this));// multiple handlers
         this.$followBannerTrigger.on('click', this.showFollowCard.bind(this));
         this.$clearTrigger.on('click', this.clearCards.bind(this));
       },
